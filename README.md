@@ -32,10 +32,10 @@ güncellenecektir.
 | `/scss/helper/`   | - Yardımcı stil dosyaları                     |
 | `/scss/pages/`    | - Sayfa stilleri (kullanım tercihinize göre)  |
 | `/scss/main.scss` | - Tüm stillerin import edilmesi gereken dosya |
-| `/css/`           | - Derlenmiş stil dosyaları (main.css)         |
-| `/images/`        | - Sayfada kullanılan resimler, iconlar vb.    |
-| `/js/`            | - Kullanılan javascript dosyaları             |
-| `/index.html`     | HTML Şablonu                                  |
+| `/app/css/`       | - Derlenmiş stil dosyaları (main.css)         |
+| `/app/images/`    | - Sayfada kullanılan resimler, iconlar vb.    |
+| `/app/js/`        | - Kullanılan javascript dosyaları             |
+| `/app/index.html` | HTML Şablonu                                  |
 
 ## Gereksinimler
 

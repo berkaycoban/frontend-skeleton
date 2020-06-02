@@ -302,3 +302,28 @@ template {
  */
 [hidden] {
   display: none; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+body {
+  font-size: 16px; }
+
+.container {
+  width: 100%;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px; } }

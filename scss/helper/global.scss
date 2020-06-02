@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: $font-size;
+}
+
+.container {
+  width: 100%;
+  padding-right: $gutter;
+  padding-left: $gutter;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq {
+    max-width: $max-md-width;
+  }
+  @include mq("desktop") {
+    max-width: $max-lg-width;
+  }
+  @include mq("large") {
+    max-width: $max-xl-width;
+  }
+}
