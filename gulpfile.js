@@ -1,6 +1,7 @@
 const { src, dest, parallel, series, watch } = require("gulp");
 const sass = require("gulp-sass");
 const browsersync = require("browser-sync").create();
+const webp = require("gulp-webp");
 
 // BrowserSync
 function browserSync(done) {
@@ -27,7 +28,13 @@ function css() {
 function watchFiles() {
   watch("scss/**/*.scss", series(css, browserSyncReload));
   watch("./app/**/*.html", browserSyncReload);
+  watch("src/images/**/*", series(images, browserSyncReload));
+}
+
+function images() {
+  return src("src/images/**/*").pipe(webp()).pipe(dest("./app/images/"));
 }
 
 exports.css = css;
+exports.images = images;
 exports.default = parallel(watchFiles, browserSync);
